@@ -1,0 +1,10 @@
+<!-- team.html.erb -->
+
+<ul class="list-inline text-center">
+  <% data.team.each do |member, infos| %>
+    <li>
+      <%= image_tag "#{infos.picture}", class: "img-circle" %>
+      <h3><%= infos.name.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
